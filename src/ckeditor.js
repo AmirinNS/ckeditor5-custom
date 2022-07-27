@@ -26,8 +26,8 @@ import Image from '@ckeditor/ckeditor5-image/src/image.js';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption.js';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar.js';
-import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
-
+// import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
+import InsertImage from "./Plugins/insertImage";
 import AutoImage from '@ckeditor/ckeditor5-image/src/autoimage';
 
 import sideIcon from '@ckeditor/ckeditor5-core/theme/icons/object-inline-right.svg';
@@ -55,8 +55,8 @@ Editor.builtinPlugins = [
 	ImageCaption,
 	ImageStyle,
 	ImageToolbar,
+	InsertImage,
 	AutoImage,
-	ImageInsert,
 	Indent,
 	Italic,
 	Link,
@@ -67,6 +67,7 @@ Editor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
+	// InsertImage,
 	SourceEditing,
 	GeneralHtmlSupport
 ];
@@ -86,7 +87,7 @@ Editor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
-			'imageInsert',
+			'insertImage',
 			'blockQuote',
 			'insertTable',
 			'undo',
